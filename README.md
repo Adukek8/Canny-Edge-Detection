@@ -2,7 +2,7 @@
 
 Canny edge detection is a popular multi-stage image processing algorithm that detects a range of edges in images. The process begins with converting the image to greyscale, and then smoothing the image through a Gaussian blur. The image is convolved with a Gaussian kernel (in this project, a 5x5) to create a blurring effect.
 
-The next step is to obtain both intensity and edge detection matrices. This is accomplished through the use of a Sobel filter, which finds the intensity and direction gradients of an image. After establishing two kernels (for the x and y direction), each pixel in the image is multiplied by the kernel to find the x and y magnitudes. Direction is then found and set by taking the arctangent and multiplying it by 180/pi.
+The next step is to obtain both intensity and edge detection matrices. This is accomplished through the use of a Sobel filter, which finds the intensity and direction gradients of an image.
 
 After determining the intensity and directions of the image, a non-maximum suppression algorithm is applied to thin out the edges. Pixel with relative non-maximal intensity are set to black, while the most intense pixels are maintained.
 

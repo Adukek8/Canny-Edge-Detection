@@ -33,4 +33,5 @@ Double Threshold:
 ![6](https://user-images.githubusercontent.com/38268188/142051929-57d41936-2df0-46a1-8ac0-4c916dcac705.png)
 
 Hysteresis (output image):
+![desert_edges](https://user-images.githubusercontent.com/38268188/142055980-f344da1c-1494-430b-88d9-4bfd6dc88b80.png)
 

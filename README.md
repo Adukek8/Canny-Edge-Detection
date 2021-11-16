@@ -11,6 +11,7 @@ A double-threshold is then applied to the image, which categorizes pixels into t
 The final step is to apply a hysteresis algorithm, which converts weak pixels to strong if any of the pixels seated directly next to the currently observed pixel are considered strong.
 
 The following display the process by which Canny edge detection finds the edges of an image:
+
 Initial Image:
 ![desert](https://user-images.githubusercontent.com/38268188/142051931-e985f2b1-f730-44aa-bc34-43cc16501a6b.png)
 

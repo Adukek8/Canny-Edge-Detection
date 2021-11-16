@@ -5,12 +5,6 @@ float GetLuminance(unsigned char* pixel){
     return 0.2126*pixel[0] + 0.7152*pixel[1] + 0.0722*pixel[2];
 }
 
-
-/*******************************************************************************
- * Member Functions
- ******************************************************************************/
-
-
 void GreyScaleFilter::Apply(std::vector<Image*> original, std::vector<Image*> filter){
     *filter[0] = *original[0];
     for (int x=0; x<original[0]->GetWidth(); x++){

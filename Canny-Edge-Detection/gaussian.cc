@@ -1,9 +1,5 @@
 #include "gaussian.h"
 
-/*******************************************************************************
- * Member Functions
- ******************************************************************************/
-
 void Gaussian::Apply(std::vector<Image*> original, std::vector<Image*> filter){
     *filter[0] = *original[0];
 

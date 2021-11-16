@@ -1,7 +1,3 @@
-
-/*******************************************************************************
-* Includes
-******************************************************************************/
 #include "image.h"
 
 // Needed for reading images
@@ -14,10 +10,6 @@
 #include "stb_image_write.h"
 
 #include <string>
-
-/*******************************************************************************
- * Member Functions
- ******************************************************************************/
 
 Image::Image(int widthC, int heightC): width(widthC), height(heightC), components(4){
     buffer= new unsigned char [width*height*components];

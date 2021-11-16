@@ -1,22 +1,8 @@
-/**
- * @file double_threshold.cc
- *
- * @copyright 2021 Calvin Hoffmann, All rights reserved.
- */
-
-/*******************************************************************************
-* Includes
-******************************************************************************/
-
 #include <iostream>
 #include <vector>
 #include "filter.h"
 #include "image.h"
 #include "double_threshold.h"
-
-/*******************************************************************************
- * Member Functions
- ******************************************************************************/
 
 Double_threshold::Double_threshold(float lowThresholdRatio, float highThresholdRatio){
     this->lowThresh = lowThresholdRatio;        // set low threshold value

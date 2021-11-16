@@ -4,20 +4,12 @@
  * @copyright 2021 Calvin Hoffmann, All rights reserved.
  */
 
-/*******************************************************************************
-* Includes
-******************************************************************************/
-
 #include <iostream>
 #include <vector>
 #include "filter.h"
 #include "image.h"
 #include "hysteresis_filter.h"
 
-
-/*******************************************************************************
- * Member Functions
- ******************************************************************************/
 
 float Hysteresis_filter::getLuminance(unsigned char* pixel){
     return 0.2126*pixel[0] + 0.7152*pixel[1] + 0.0722*pixel[2];

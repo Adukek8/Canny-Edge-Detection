@@ -11,8 +11,6 @@
 #include "non-max_suppression_filter.h"
 #include "double_threshold.h"
 #include "hysteresis_filter.h"
-#include "sharpen_filter.h"
-#include "nightvision_filter.h"
 #include "canny_edge_detect.h"
 
 using namespace std;
@@ -25,9 +23,6 @@ int main(int argc, const char* argv[]) {
     std::string filterType(argv[2]);
     std::string outputFile(argv[3]);
 
-
-
-
     // Create available filters (unique_ptr handles dynamic memory)
     std::map<std::string, unique_ptr<Filter>> filters;
     filters["greyscale"] = unique_ptr<Filter>(new GreyScaleFilter());
@@ -36,8 +31,6 @@ int main(int argc, const char* argv[]) {
     filters["non_max_suppression"] = unique_ptr<Filter>(new NonMaxSuppression()); 
     filters["double_threshold"] = unique_ptr<Filter>(new Double_threshold(0.1, 0.2));      
     filters["hysteresis"] = unique_ptr<Filter>(new Hysteresis_filter());
-    filters["sharpen"] = unique_ptr<Filter>(new Sharpen());
-    filters["night_vision"] = unique_ptr<Filter>(new NightVision());
     filters["canny-edge-detect"] = unique_ptr<Filter>(new CannyEdgeDetect());
 
 
@@ -50,6 +43,7 @@ int main(int argc, const char* argv[]) {
     inputs.push_back(&input);
     outputs.push_back(&output);
     outputs.push_back(&output2);
+
     // Apply filter based on filter type
     filters[filterType]->Apply(inputs, outputs);
     

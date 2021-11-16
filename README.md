@@ -27,10 +27,10 @@ Sobel Filter (Edge Direction):
 ![4](https://user-images.githubusercontent.com/38268188/142051927-9dd9d34e-c160-4232-9f07-8f8ec1a5863b.png)
 
 Non-Maximum Suppression:
-![4](https://user-images.githubusercontent.com/38268188/142051927-9dd9d34e-c160-4232-9f07-8f8ec1a5863b.png)
-
-Double-Threshold:
 ![5](https://user-images.githubusercontent.com/38268188/142051928-140662be-bfca-4e8a-aa7f-83a5f8796d0c.png)
 
-Hysteresis (output image):
+Double Threshold:
 ![6](https://user-images.githubusercontent.com/38268188/142051929-57d41936-2df0-46a1-8ac0-4c916dcac705.png)
+
+Hysteresis (output image):
+
